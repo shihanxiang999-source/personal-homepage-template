@@ -53,7 +53,7 @@ https://shihanxiang999-source.github.io/stella/
 
 如果你想联系我，可以发邮件：
 
-stella@example.com
+shihanxiang999@gmail.com
 
 或者访问我的 GitHub：
 
