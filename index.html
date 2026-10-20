@@ -3,18 +3,24 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>我的个人主页</title>
-  <meta name="description" content="个人主页、项目展示、技能介绍和联系方式" />
+  <title>Stella | 个人主页</title>
+  <meta name="description" content="Stella 个人主页，作品展示、技能介绍和联系方式" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+
   <header class="site-header">
     <nav class="nav container">
-      <div class="logo">MY HOME</div>
+      <div class="logo">STELLA</div>
       <div class="nav-links">
         <a href="#about">关于</a>
         <a href="#skills">技能</a>
-        <a href="#projects">项目</a>
+        <a href="#projects">作品</a>
         <a href="#contact">联系</a>
       </div>
     </nav>
@@ -23,25 +29,36 @@
   <main>
     <section class="hero">
       <div class="container hero-inner">
-        <div class="hero-text">
-          <p class="eyebrow">HELLO WORLD</p>
-          <h1>我是 <span>史寒香</span></h1>
+        <div class="hero-text reveal">
+          <p class="eyebrow">HELLO, I'M</p>
+          <h1>Stella</h1>
+          <h2>Creative Designer & Front-end Learner</h2>
           <p class="intro">
-            我是一名热爱学习和创造的人，喜欢设计、编程和做有意思的网页作品。  
-            这是我的个人主页，用来展示我的经历、技能和项目。
+            我喜欢把想法变成页面，热爱视觉设计、前端学习和创意实践。  
+            这里记录我的作品、学习心得和个人成长。
           </p>
 
           <div class="actions">
-            <a class="btn primary" href="#projects">查看项目</a>
+            <a class="btn primary" href="#projects">查看作品</a>
             <a class="btn secondary" href="#contact">联系我</a>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="mailto:stella@example.com">Email</a>
+            <a href="#" target="_blank" rel="noreferrer">Behance</a>
           </div>
         </div>
 
-        <div class="avatar-card">
-          <div class="avatar">史</div>
-          <div class="card-info">
-            <h3>个人标签</h3>
-            <p>学习者 / 网页爱好者 / 追星者</p>
+        <div class="hero-visual reveal">
+          <div class="portrait-card">
+            <img
+              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
+              alt="Stella portrait"
+            />
+            <div class="badge">
+              <span>Available</span>
+            </div>
           </div>
         </div>
       </div>
@@ -49,61 +66,121 @@
 
     <section id="about" class="section">
       <div class="container">
-        <div class="section-title">
+        <div class="section-heading reveal">
           <p>ABOUT</p>
           <h2>关于我</h2>
         </div>
 
-        <div class="about-box">
-          <p>
-            我目前正在学习前端开发和网页设计，喜欢研究页面布局、色彩搭配和交互效果。
-          </p>
-          <p>
-            我希望通过持续学习和实践，提升自己的设计和技术能力，把想法变成可用的作品。
-          </p>
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <p>
+              我是一名热爱设计与创造的人，喜欢研究界面、配色和交互方式，
+              也在持续学习前端开发，努力把设计和代码结合起来。
+            </p>
+            <p>
+              目前的目标是不断提升自己的表达能力，把创意转化为清晰、美观且实用的作品。
+            </p>
+          </div>
+
+          <div class="about-image reveal">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              alt="creative workspace"
+            />
+          </div>
         </div>
       </div>
     </section>
 
     <section id="skills" class="section alt">
       <div class="container">
-        <div class="section-title">
+        <div class="section-heading reveal">
           <p>SKILLS</p>
-          <h2>我的技能</h2>
+          <h2>核心能力</h2>
         </div>
 
         <div class="skills-grid">
-          <div class="skill-card">HTML</div>
-          <div class="skill-card">CSS</div>
-          <div class="skill-card">JavaScript</div>
-          <div class="skill-card">GitHub</div>
-          <div class="skill-card">UI 设计</div>
-          <div class="skill-card">持续学习</div>
+          <div class="skill-card reveal">
+            <span class="icon">✦</span>
+            <h3>UI/UX</h3>
+            <p>页面排版、视觉设计、用户体验优化</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="icon">⚡</span>
+            <h3>HTML / CSS</h3>
+            <p>响应式布局、样式设计、页面结构设计</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="icon">⌨️</span>
+            <h3>JavaScript</h3>
+            <p>交互效果、动画、页面逻辑实现</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="icon">🌐</span>
+            <h3>GitHub</h3>
+            <p>代码托管、项目管理、页面部署</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="icon">🎨</span>
+            <h3>设计思维</h3>
+            <p>品牌表达、信息层级、视觉传达</p>
+          </div>
+
+          <div class="skill-card reveal">
+            <span class="icon">📈</span>
+            <h3>持续学习</h3>
+            <p>不断迭代、观察、实践和提升</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section id="projects" class="section">
       <div class="container">
-        <div class="section-title">
-          <p>PROJECTS</p>
-          <h2>项目展示</h2>
+        <div class="section-heading reveal">
+          <p>WORKS</p>
+          <h2>代表作品</h2>
         </div>
 
         <div class="projects-grid">
-          <article class="project-card">
-            <h3>个人博客页</h3>
-            <p>一个简洁的博客页面，用来记录学习笔记、文章和个人想法。</p>
+          <article class="project-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+              alt="Project 1"
+            />
+            <div class="project-content">
+              <span class="tag">Website</span>
+              <h3>个人博客页</h3>
+              <p>用于记录知识、文章和创意灵感的个人网站设计。</p>
+            </div>
           </article>
 
-          <article class="project-card">
-            <h3>产品展示页</h3>
-            <p>一个适合展示作品、服务或个人项目的静态网页，页面简洁清晰。</p>
+          <article class="project-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
+              alt="Project 2"
+            />
+            <div class="project-content">
+              <span class="tag">Portfolio</span>
+              <h3>作品集展示</h3>
+              <p>一页式展示体系，适合个人品牌和作品集展示。</p>
+            </div>
           </article>
 
-          <article class="project-card">
-            <h3>学习记录站</h3>
-            <p>用于记录学习路线、技能提升进度和成长历程的个人网站。</p>
+          <article class="project-card reveal">
+            <img
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+              alt="Project 3"
+            />
+            <div class="project-content">
+              <span class="tag">Study</span>
+              <h3>学习记录站</h3>
+              <p>用于整理学习过程、计划和成长轨迹的轻量站点。</p>
+            </div>
           </article>
         </div>
       </div>
@@ -111,15 +188,24 @@
 
     <section id="contact" class="section contact">
       <div class="container">
-        <div class="section-title">
+        <div class="section-heading reveal">
           <p>CONTACT</p>
           <h2>联系我</h2>
         </div>
 
-        <div class="contact-box">
-          <p>Email: shihanxiang999@gmail.com</p>
-          <p>GitHub: shihanxiang999-source</p>
-          <p>微信: SHI77666888</p>
+        <div class="contact-box reveal">
+          <div class="contact-item">
+            <span>Email</span>
+            <a href="mailto:stella@example.com">stella@example.com</a>
+          </div>
+          <div class="contact-item">
+            <span>GitHub</span>
+            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a>
+          </div>
+          <div class="contact-item">
+            <span>WeChat</span>
+            <a href="#">stella_wechat</a>
+          </div>
         </div>
       </div>
     </section>
@@ -127,7 +213,7 @@
 
   <footer class="site-footer">
     <div class="container">
-      <p>© <span id="year"></span> 史寒香</p>
+      <p>© <span id="year"></span> Stella</p>
     </div>
   </footer>
 
