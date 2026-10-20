@@ -3,217 +3,149 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Stella | 个人主页</title>
-  <meta name="description" content="Stella 个人主页，作品展示、技能介绍和联系方式" />
+  <title>Stella | Academic Homepage</title>
+  <meta name="description" content="Stella's academic homepage and personal research profile" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="bg-blur blur-1"></div>
-  <div class="bg-blur blur-2"></div>
-
-  <header class="site-header">
-    <nav class="nav container">
-      <div class="logo">STELLA</div>
-      <div class="nav-links">
-        <a href="#about">关于</a>
-        <a href="#skills">技能</a>
-        <a href="#projects">作品</a>
-        <a href="#contact">联系</a>
-      </div>
-    </nav>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="brand">Stella</div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#research">Research</a>
+        <a href="#publications">Publications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text reveal">
-          <p class="eyebrow">HELLO, I'M</p>
-          <h1>Stella</h1>
-          <h2>Creative Designer & Front-end Learner</h2>
-          <p class="intro">
-            我喜欢把想法变成页面，热爱视觉设计、前端学习和创意实践。  
-            这里记录我的作品、学习心得和个人成长。
+  <main class="container">
+
+    <section id="about" class="hero">
+      <div class="profile-pic">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80" alt="Stella portrait" />
+      </div>
+
+      <div class="profile-text">
+        <p class="eyebrow">Hello, I'm</p>
+        <h1>Stella</h1>
+        <h2>Designer • Learner • Creative Technologist</h2>
+        <p>
+          I am interested in visual design, creative technology, and front-end learning.
+          My work focuses on building expressive, accessible, and thoughtful digital experiences.
+        </p>
+        <div class="badges">
+          <span>UI/UX</span>
+          <span>Front-end</span>
+          <span>Design</span>
+        </div>
+
+        <div class="links">
+          <a href="mailto:stella@example.com">Email</a>
+          <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="#" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="news" class="section">
+      <div class="section-head">
+        <h3>News</h3>
+      </div>
+
+      <ul class="news-list">
+        <li><span>2026</span> Joined a new creative design and front-end learning project.</li>
+        <li><span>2026</span> Started exploring interface design and accessible interaction patterns.</li>
+        <li><span>2025</span> Built a set of personal portfolio experiments and design explorations.</li>
+      </ul>
+    </section>
+
+    <section id="research" class="section">
+      <div class="section-head">
+        <h3>Research</h3>
+      </div>
+
+      <div class="card-grid">
+        <article class="card">
+          <h4>Human-Centered Interface Design</h4>
+          <p>
+            Exploring how thoughtful visual systems and simplified interfaces help users
+            communicate ideas more clearly and comfortably.
           </p>
+        </article>
 
-          <div class="actions">
-            <a class="btn primary" href="#projects">查看作品</a>
-            <a class="btn secondary" href="#contact">联系我</a>
-          </div>
+        <article class="card">
+          <h4>Creative Technology</h4>
+          <p>
+            Examining the intersection of design, storytelling, and interactive systems
+            to create memorable digital experiences.
+          </p>
+        </article>
 
-          <div class="social-row">
-            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">GitHub</a>
-            <a href="mailto:stella@example.com">Email</a>
-            <a href="#" target="_blank" rel="noreferrer">Behance</a>
-          </div>
-        </div>
-
-        <div class="hero-visual reveal">
-          <div class="portrait-card">
-            <img
-              src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80"
-              alt="Stella portrait"
-            />
-            <div class="badge">
-              <span>Available</span>
-            </div>
-          </div>
-        </div>
+        <article class="card">
+          <h4>Learning Through Practice</h4>
+          <p>
+            Studying how iterative design experimentation can support personal growth,
+            creative confidence, and technical development.
+          </p>
+        </article>
       </div>
     </section>
 
-    <section id="about" class="section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p>ABOUT</p>
-          <h2>关于我</h2>
-        </div>
+    <section id="publications" class="section">
+      <div class="section-head">
+        <h3>Selected Works</h3>
+      </div>
 
-        <div class="about-grid">
-          <div class="about-card reveal">
-            <p>
-              我是一名热爱设计与创造的人，喜欢研究界面、配色和交互方式，
-              也在持续学习前端开发，努力把设计和代码结合起来。
-            </p>
-            <p>
-              目前的目标是不断提升自己的表达能力，把创意转化为清晰、美观且实用的作品。
-            </p>
+      <ul class="paper-list">
+        <li>
+          <div class="year">2026</div>
+          <div class="paper">
+            <h4>Designing Personal Web Experiences for Creative Identity</h4>
+            <p>Conceptual exploration on personal branding, digital storytelling, and interface consistency.</p>
           </div>
+        </li>
 
-          <div class="about-image reveal">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-              alt="creative workspace"
-            />
+        <li>
+          <div class="year">2025</div>
+          <div class="paper">
+            <h4>Interaction Patterns for Friendly Learning Platforms</h4>
+            <p>Research on hierarchy, accessibility, and visual clarity in educational interfaces.</p>
           </div>
-        </div>
+        </li>
+
+        <li>
+          <div class="year">2024</div>
+          <div class="paper">
+            <h4>Portfolio as a Narrative</h4>
+            <p>How a digital portfolio can function as an expressive, evolving personal representation.</p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head">
+        <h3>Contact</h3>
+      </div>
+
+      <div class="contact-box">
+        <p><strong>Email:</strong> <a href="mailto:stella@example.com">stella@example.com</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a></p>
+        <p><strong>Location:</strong> Hangzhou, China</p>
       </div>
     </section>
 
-    <section id="skills" class="section alt">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p>SKILLS</p>
-          <h2>核心能力</h2>
-        </div>
-
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <span class="icon">✦</span>
-            <h3>UI/UX</h3>
-            <p>页面排版、视觉设计、用户体验优化</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <span class="icon">⚡</span>
-            <h3>HTML / CSS</h3>
-            <p>响应式布局、样式设计、页面结构设计</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <span class="icon">⌨️</span>
-            <h3>JavaScript</h3>
-            <p>交互效果、动画、页面逻辑实现</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <span class="icon">🌐</span>
-            <h3>GitHub</h3>
-            <p>代码托管、项目管理、页面部署</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <span class="icon">🎨</span>
-            <h3>设计思维</h3>
-            <p>品牌表达、信息层级、视觉传达</p>
-          </div>
-
-          <div class="skill-card reveal">
-            <span class="icon">📈</span>
-            <h3>持续学习</h3>
-            <p>不断迭代、观察、实践和提升</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="projects" class="section">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p>WORKS</p>
-          <h2>代表作品</h2>
-        </div>
-
-        <div class="projects-grid">
-          <article class="project-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
-              alt="Project 1"
-            />
-            <div class="project-content">
-              <span class="tag">Website</span>
-              <h3>个人博客页</h3>
-              <p>用于记录知识、文章和创意灵感的个人网站设计。</p>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1200&q=80"
-              alt="Project 2"
-            />
-            <div class="project-content">
-              <span class="tag">Portfolio</span>
-              <h3>作品集展示</h3>
-              <p>一页式展示体系，适合个人品牌和作品集展示。</p>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <img
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
-              alt="Project 3"
-            />
-            <div class="project-content">
-              <span class="tag">Study</span>
-              <h3>学习记录站</h3>
-              <p>用于整理学习过程、计划和成长轨迹的轻量站点。</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section contact">
-      <div class="container">
-        <div class="section-heading reveal">
-          <p>CONTACT</p>
-          <h2>联系我</h2>
-        </div>
-
-        <div class="contact-box reveal">
-          <div class="contact-item">
-            <span>Email</span>
-            <a href="mailto:stella@example.com">stella@example.com</a>
-          </div>
-          <div class="contact-item">
-            <span>GitHub</span>
-            <a href="https://github.com/yourname" target="_blank" rel="noreferrer">github.com/yourname</a>
-          </div>
-          <div class="contact-item">
-            <span>WeChat</span>
-            <a href="#">stella_wechat</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Stella</p>
+      © <span id="year"></span> Stella
     </div>
   </footer>
 
